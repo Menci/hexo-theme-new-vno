@@ -178,15 +178,15 @@ blockquote p:last-child {
 }
 
 ol, ul {
-  margin: 0 0 1.3em 2.5em;
+  margin: 1.3em 0 1.3em 2.5em;
 }
 
 ol li, ul li {
-  margin: 0 0 .2em 0;
+  margin: 0 0 0 0;
   line-height: 1.6em;
 }
 
-ol ol, ol ul, ul ol, ul ul {
+ol:not(.post-list) ol, ol:not(.post-list) ul, ul ol, ul ul {
   margin: .1em 0 .2em 2em;
 }
 
@@ -392,8 +392,10 @@ i.fa.fa-spinner.fa-spin {
 .post img {
   max-width: 100%;
   margin: 0 auto;
-  border-radius: 3px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   text-align: center;
+  display: block;
 }
 
 .post pre {
@@ -469,7 +471,7 @@ i.fa.fa-spinner.fa-spin {
 }
 
 .panel-cover__description {
-  margin: 0 30px;
+  margin: 0;
 }
 
 .panel-cover__divider {
@@ -739,11 +741,11 @@ i {
   text-align: left;
 }
 
-.post-list li {
+.post-list > li {
   margin: 0 0 2.2em 0;
 }
 
-.post-list li:last-child hr {
+.post-list > li:last-child hr {
   display: none;
 }
 
