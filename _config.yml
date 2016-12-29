@@ -24,6 +24,8 @@ fancybox: true
 
 duoshuo_shortname: 
 
+comment_on_non_post: false
+
 google_analytics: UA-78918255-1
 baidu_tongji: 9cdad07c755fa23f6aced510c6760e87
 favicon: /images/avatar-small.png
