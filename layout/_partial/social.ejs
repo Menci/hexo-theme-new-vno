@@ -78,6 +78,16 @@
   </li>
 <% } %>
 
+<% if (config.qq) { %>
+  <li class="navigation__item">
+    <a href="<%= config.qq%>" title="QQ 联系我" target="_blank">
+      <i class='social fa fa-qq'></i>
+      <span class="label">QQ</span>
+    </a>
+  </li>
+<% } %>
+
+
 <% if (theme.search) { %>
     <%- partial('_partial/search', {}) %>
 <% } %>
