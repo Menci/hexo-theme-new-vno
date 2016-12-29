@@ -1,0 +1,36 @@
+<li class="navigation__item">
+  <a href="#" title="搜索">
+    <i class='social fa fa-search search-form-link'></i>
+    <span class="label">搜索</span>
+  </a>
+</li>
+
+<div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="搜索 ..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '无标题',
+        },
+        ROOT_URL: '<%= config.root %>',
+        CONTENT_URL: '<%- url_for("/content.json")%>',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<%- js('js/insight') %>

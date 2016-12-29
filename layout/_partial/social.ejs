@@ -78,5 +78,9 @@
   </li>
 <% } %>
 
+<% if (theme.search) { %>
+    <%- partial('_partial/search', {}) %>
+<% } %>
+
   </ul>
 </nav>

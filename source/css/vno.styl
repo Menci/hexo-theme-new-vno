@@ -810,7 +810,7 @@ i {
   line-height: 1.8em;
 }
 
-input[type="text"],
+input[type="text"]:not(.ins-search-input),
 input[type="password"],
 input[type="datetime"],
 input[type="datetime-local"],
@@ -832,7 +832,7 @@ input[type="tel"] {
   color: #666666;
 }
 
-input[type="text"]:focus,
+input[type="text"]:not(.ins-search-input):focus,
 input[type="password"]:focus,
 input[type="datetime"]:focus,
 input[type="datetime-local"]:focus,
@@ -848,7 +848,7 @@ input[type="tel"]:focus {
   border-color: #5ba4e5;
 }
 
-input[type="text"]::-webkit-input-placeholder,
+input[type="text"]:not(.ins-search-input)::-webkit-input-placeholder,
 input[type="password"]::-webkit-input-placeholder,
 input[type="datetime"]::-webkit-input-placeholder,
 input[type="datetime-local"]::-webkit-input-placeholder,
@@ -864,7 +864,7 @@ input[type="tel"]::-webkit-input-placeholder {
   color: #cccccc;
 }
 
-input[type="text"]::-moz-placeholder,
+input[type="text"]:not(.ins-search-input)::-moz-placeholder,
 input[type="password"]::-moz-placeholder,
 input[type="datetime"]::-moz-placeholder,
 input[type="datetime-local"]::-moz-placeholder,
@@ -880,7 +880,7 @@ input[type="tel"]::-moz-placeholder {
   color: #cccccc;
 }
 
-input[type="text"]:-moz-placeholder,
+input[type="text"]:not(.ins-search-input):-moz-placeholder,
 input[type="password"]:-moz-placeholder,
 input[type="datetime"]:-moz-placeholder,
 input[type="datetime-local"]:-moz-placeholder,
@@ -896,7 +896,7 @@ input[type="tel"]:-moz-placeholder {
   color: #cccccc;
 }
 
-input[type="text"]:-ms-input-placeholder,
+input[type="text"]:not(.ins-search-input):-ms-input-placeholder,
 input[type="password"]:-ms-input-placeholder,
 input[type="datetime"]:-ms-input-placeholder,
 input[type="datetime-local"]:-ms-input-placeholder,
